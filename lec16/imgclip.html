@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgclip</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 30px;
+        }
+        .img1{
+            clip-path: circle(30%);
+        }
+        .img2{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .img3{
+            clip-path: inset(5% 20% 50% 10%);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="img1" src="../assets/image/web.jpeg" alt="">
+        <img class="img2" src="../assets/image/web.jpeg" alt="">
+        <img class="img3" src="../assets/image/web.jpeg" alt="">
+    </div>
+</body>
+</html>

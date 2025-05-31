@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtering img</title>
+    <style>
+        .img1{
+            margin: 200px;
+            border: 1px solid black;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            
+            filter: 
+                blur(2px)              /* Basic: softens the image */
+                brightness(1.2)        /* Basic: 1 is default, >1 is brighter */
+                contrast(110%)         /* Basic: 100% is default, higher means more contrast */
+                grayscale(50%)         /* Turns image partly grayscale */
+                sepia(30%)             /* Adds a warm brown tone */
+                saturate(150%)         /* Increases color intensity */
+                invert(10%)            /* Slightly inverts colors */
+                hue-rotate(180deg)     /* Shifts all hues by degrees */
+                drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5)); /* Advanced: adds shadow like box-shadow for images */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <img src="https://images.pexels.com/photos/220694/pexels-photo-220694.jpeg?cs=srgb&dl=pexels-bara-art-220694.jpg&fm=jpg" alt="">
+    </div>
+</body>
+</html>

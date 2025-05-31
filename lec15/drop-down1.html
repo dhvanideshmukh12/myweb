@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dropdown Navigation</title>
+  <style>
+    header {
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 50px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .navbar li {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .drop-down {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: gray;
+      padding: 10px 0;
+      margin: 0;
+      border: 1px solid black;
+      min-width: 120px;
+      /* z-index: 100; */
+    }
+
+    .drop-down li {
+      padding: 10px 15px;
+      color: white;
+    }
+
+    .drop-down li:hover {
+      background-color: #555;
+    }
+
+    .team:hover .drop-down {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" style="color:white; text-decoration:none;">Home</a></li>
+        <li class="team">
+          <a href="#" style="color:white; text-decoration:none;">Team</a>
+          <ul class="drop-down">
+            <li>Team 1</li>
+            <li>Team 2</li>
+            <li>Team 3</li>
+            <li>Team 4</li>
+          </ul>
+        </li>
+        <li><a href="#" style="color:white; text-decoration:none;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>

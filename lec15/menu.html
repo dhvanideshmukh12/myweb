@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+           background-color: black;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top:0;
+        }
+        nav{
+            display: flex;
+            height: 100%; 
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            color: white;
+        }
+        nav .menu{
+            display: flex;
+            align-items:center ;
+            height: 100%;
+            padding: 0 15px;
+        }
+        nav .menu:hover{
+            background-color: red;
+            color: white;
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            
+        }
+        
+        .megamenu{
+            display: none;
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top:60px;
+            left: 0;
+            background-color: grey;
+            z-index: 1;
+            
+
+        }
+        
+        #drop:hover .megamenu{
+                display: block;
+
+        }
+        .head{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            padding: 20px;
+        }
+        .menus{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .menu1{
+            list-style: none;
+            font-size: 20px;
+        }
+        .menu1>li{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="menu"><a href="">Home</a></div>
+            <div class="menu"><a href="">About</a></div>
+            <div class="menu"><a href="">Skill</a></div>
+            <div class="menu" id="drop"><a href="">Contact</a>
+            <div class="megamenu">
+                <h1 class="head">Mega Menu</h1>
+                <div class="menus">
+                <ul class="menu1">
+                    <li>Team 1</li>
+                    <li>Team 2</li>
+                    <li>Team 3</li>
+                </ul>
+                <ul class="menu1">
+                    <li>Team 1</li>
+                    <li>Team 2</li>
+                    <li>Team 3</li>
+                </ul>
+                <ul class="menu1">
+                    <li>Team 1</li>
+                    <li>Team 2</li>
+                    <li>Team 3</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

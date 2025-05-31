@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce</title>
+    <style>
+        body{
+            margin-top: 100px;
+        }
+        .main{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            gap:30px
+        }
+        .inner{
+            
+            height: 100%;
+            /* border: 2px solid black; */
+
+        }
+        .img1{
+            height: 300px;
+            width: 300px;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            transform: scale(2);
+        }
+        .img2{
+            height: 300px;
+            width: 300px;
+            animation-name: bounce;
+            animation-duration: 0.5s;
+            animation-delay: 1s;
+            animation-timing-function: initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            transform: skew(30deg);
+        }
+        .img3{
+            height: 300px;
+            width: 300px;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-timing-function: initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            transform: rotate(180deg);
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translate(0,500px)
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner" id="box-1">
+            <img class="img1" src="img/cat1.png" alt="image1">
+        </div>
+        <div class="inner" id="box-2">
+            <img class="img2" src="img/cat1.png" alt="image2">
+        </div>
+        <div class="inner" id="box-3">
+            <img class="img3" src="img/cat1.png" alt="image3">
+        </div>
+    </div>
+
+</body>
+</html>

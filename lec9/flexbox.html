@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        body{
+            padding: 20px;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+        
+        }
+        .main{
+            height: 500px;
+            width: 800px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+        <div class="inner">7</div>
+        <div class="inner">8</div>
+        <div class="inner">9</div>
+        <div class="inner">10</div>
+    </div>
+</body>
+</html>

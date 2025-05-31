@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background clip</title>
+    <style>
+        .main{
+            padding: 30px;
+        }
+        .box{
+            height: 300px;
+            width: 100%;
+            border: 10px dotted black;
+            background-color: aqua;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        #box1{
+            background-clip: border-box;
+        }
+        #box2{
+            background-clip: padding-box;
+        }
+        #box3{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit explicabo illo corrupti. Reiciendis laborum, incidunt explicabo odit voluptatem quae. Voluptatem voluptas excepturi commodi! Minus quae eveniet a non! Odio!
+        </div>
+        <div class="box" id="box2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est molestiae quibusdam excepturi minima natus dolorem dolores, cupiditate saepe laboriosam, expedita nesciunt nihil optio accusantium nulla harum aperiam perferendis. Suscipit, quidem.
+        </div>
+        <div class="box" id="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur fugiat sequi beatae. Animi ex possimus vel quia at cupiditate doloribus odio accusamus dolores, unde consequuntur veniam accusantium fuga maxime.
+        </div>
+    </div>
+</body>
+</html>

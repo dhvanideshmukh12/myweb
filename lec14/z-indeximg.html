@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            margin: 20px;
+            height: 700px;
+            width: 100%;
+            border: 10px solid green;
+            position: relative ;
+
+        }
+        .img1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+
+        }
+        .img2{
+            position: absolute;
+            height: 400px;
+            width: 200px;
+            top:250px;
+            left: 550px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://img.freepik.com/premium-photo/london-street-view_933329-766.jpg" alt="" class="img1">
+        <img src="https://th.bing.com/th/id/OIP.h5817atO6jX9L5E-d8AdZAHaPj?w=166&h=350&c=7&r=0&o=7&cb=iwp2&dpr=1.3&pid=1.7&rm=3" alt="" class="img2">
+    </div>
+</body>
+</html>

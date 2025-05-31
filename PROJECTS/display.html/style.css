@@ -1,0 +1,126 @@
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: rgba(255,255,255,0.5);
+
+}
+
+/* ------------- Header Section ------------- */
+
+header {
+    padding: 15px;
+    background-color: whitesmoke;
+    color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;  
+    align-items: center;  
+}
+.logo{
+    font-size: 30px;
+    flex-grow: 2;
+    justify-content: start;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-grow: 4;
+    justify-content: center;
+    font-size: 18px;
+
+}
+.button{
+    display: flex;
+    gap: 30px;
+    flex-grow: 2;
+    justify-content: end;
+
+}
+.btn1{
+    background-color:white;
+    color: #333;
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+    border: none;
+
+}
+.btn2{
+    background-color:darkgray;
+    color: white;
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+    border: none;
+}
+
+
+/* ------------- Main Section ------------- */
+
+main {
+    position: relative;
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsX29mZmljZV8zM19waG90b19vZl9iZWF1dGlmdWxfc2VhX2luX3RoZV9zdHlsZV9vZl95MmtfYV9lYzlkNTM2NS04MTUwLTRjMTQtODE0Yi1hZjJlNWU5OWE0M2ZfMS5qcGc.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;  /* Cover the full section */
+    display: flex;
+    align-items: center;  /* Vertically center content */
+    justify-content: center;  /* Horizontally center content */
+    text-align: center;
+}
+
+.content {
+    color: white;  /* Make text stand out against background */
+}
+
+h1 {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 50px;
+}
+
+p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 20px;
+}
+
+/* Button Styling */
+.h-btn1 {
+    background-color: #0288d1; /* Ocean blue */
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.h-btn1:hover {
+    background-color: #03a9f4; /* Lighter blue on hover */
+}
+
+.h-btn2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.h-btn2:hover {
+    background-color: #e0f7fa; /* Soft aqua */
+    color: #0288d1; /* Text matches ocean theme */
+    border: 2px solid #0288d1;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style</title>
+    <style>
+        .main{
+
+        }
+        ul{
+            background-color: aquamarine;
+            color:blue;
+            /* list-style-type: circle;
+            list-style-type: square;
+            list-style-type: "*"; */
+            list-style: none;
+            display: flex;
+            
+            
+        }
+        .ol{
+            color: orange;
+            list-style-type: lower-roman;
+        }
+        li{
+            padding: 10px;
+            margin: 10px;
+        }
+        .img{
+            padding: 10px;
+            margin: 10px;
+            color: darkblue;
+            list-style-image: url("../assets/image/logo.PNG");
+            list-style-position: inside;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>apple</li>
+            <li>kiwi</li>
+            <li>blueberry</li>
+            <li>strawberry</li>
+            <li>mengo</li>
+        </ul>
+        <ol class="ol">
+            <li>apple</li>
+            <li>kiwi</li>
+            <li>blueberry</li>
+            <li>strawberry</li>
+            <li>mengo</li>
+        </ol>
+
+        <ol class="img">
+            <li>apple</li>
+            <li>kiwi</li>
+            <li>blueberry</li>
+            <li>strawberry</li>
+            <li>mengo</li>
+        </ol>
+    </div>
+</body>
+</html>

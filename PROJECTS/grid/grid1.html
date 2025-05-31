@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 100px;
+            display: flex;
+        }
+        .main{
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            width: 800px;
+            height: 600px;
+            border: 2px solid rgb(8, 218, 8);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:20px
+            
+        }
+        .inner{
+            padding: 40px;  
+            /* border: 2px solid red; */
+        }
+        .first{
+            grid-row: 1 / span 3;
+        }
+        .second{
+            grid-column: 2 /span 2;
+        }
+        .six{
+            grid-column: 4;
+            grid-row: 2 / span 2;
+        }
+        .title{
+            /* padding: 40px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* grid-row:  / span 2; */
+            font-size: 36px;    
+            -webkit-text-stroke-color: #ffffff; 
+            -webkit-text-stroke-width: 1px;
+            color: rgb(131, 120, 120);
+            text-transform: capitalize;
+        }
+        .first,.second,.six{
+            background-color: rgb(8, 218, 8);
+        }
+        .third,.fifth,.seventh{
+            background-color: rgb(255, 24, 24);
+        }
+        .fourth,.eight{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner first"></div>
+        <div class="inner second"></div>
+        <div class="inner third"></div>
+        <div class="inner fourth"></div>
+        <div class="inner fifth"></div>
+        <div class="inner six"></div>
+        <div class="inner seventh"></div>
+        <div class="inner eight"></div>
+        <h1 class="title">CSS GRID</h1>
+    </div>
+</body>
+</html>

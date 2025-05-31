@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* Descendant Selector */
+        .descendent ul li{
+            list-style: none;
+            color:blue;
+        }
+        /* Class Selector */
+        .classselctor{
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+        /* Element Selector */
+        p{
+            color:black;
+            background-color: aqua;
+        }
+        /* Group Selector */
+        .group ul,ol{
+            background-color: black;
+            color: white;
+            font-style: italic;
+        }
+        /* Id Selector */
+        #first{
+            background-color: black;
+            color:white;
+        }
+        #second{
+            background-color: lightgoldenrodyellow;
+            color:black;
+        }
+        #third{
+            background-color: aqua;
+            color: rgb(4, 4, 51);
+        }
+        /* universal Selector */
+        *{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector</h1>
+    <div class="descendent">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <h1>Class Selector</h1>
+    <p class="classselctor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae placeat debitis ratione numquam porro minima laudantium omnis sapiente, praesentium sint. Fugit ad suscipit architecto laborum, laboriosam esse unde nulla.</p>
+    <h1>Element Selector</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum neque cupiditate fuga sed est, ex vitae quo ad sapiente repellendus unde ipsa possimus nam quis, natus cum maiores incidunt?</p>
+    <h1>Group Selector</h1>
+    <div class="group">
+        <ul>
+            <li>mengo</li>
+            <li>apple</li>
+            <li>kiwi</li>
+        </ul>
+        <ol>
+            <li>fruits</li>
+            <li>veggies</li>
+            <li>cookies</li>
+        </ol>
+    </div>
+    <h1>Id Selector</h1>
+    <p id="first">first paragraph: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id doloremque temporibus nostrum tempore excepturi praesentium amet aspernatur iste beatae, obcaecati enim dolore officia cupiditate animi mollitia maiores sequi porro. Qui.</p>
+    <p id="second">second paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint eum, maxime non, eveniet perspiciatis a repudiandae aut ab nesciunt ex, in cupiditate magnam aliquid. Praesentium maxime delectus illum dolore!</p>
+    <p id="third">third paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore itaque nemo fuga neque iusto architecto, incidunt, labore delectus quo corporis commodi, eligendi iure inventore corrupti fugit tenetur earum. Corrupti, sunt.</p>
+    <h1>universal Selector</h1>
+    <p>lorem: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugit provident minima quos numquam veniam commodi quasi et, non ex facilis. Dicta velit nulla voluptatum perspiciatis quam doloribus repellat iure!</p>
+</body>
+</html>

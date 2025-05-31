@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS Pseudo-elements */
+        /* ::first-line Pseudo-element */
+        .first::first-line{
+            color:blue;
+        }
+        /* ::first-letter Pseudo-element */
+        .second::first-letter{
+            color:red;
+        }
+        /* ::before Pseudo-element */
+        .third::before{
+            color:rgb(255, 0, 0);
+            background-color: lightgoldenrodyellow;
+            content: ">"
+   
+        }
+        /* ::after Pseudo-element */
+        .four::after{
+            color:aquamarine;
+            background-color: rgb(215, 28, 41);
+            content: "<"
+        }
+        /* ::marker Pseudo-element */
+        .five ::marker{
+            color: red;
+            font-size: 23px;
+        }
+        ::marker { 
+            color: red;
+            font-size: 23px;
+        }
+        /* ::selection Pseudo-element */
+        .six::selection{
+            color:white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>psudo Element</h1>
+        <!-- ::first-line Pseudo-element  -->
+         <p class="first">::first-line Pseudo-element</p>
+        <!-- ::first-letter Pseudo-element  -->
+         <p class="second">::first-letter Pseudo-element</p>
+        <!-- ::before Pseudo-element  -->
+         <p class="third">::before Pseudo-element</p>
+        <!-- ::after Pseudo-element  -->
+         <p class="four">::after Pseudo-element</p>
+        <!-- ::marker Pseudo-element  -->
+         <p class="five">::marker Pseudo-element</p>
+         <ul>
+            <li>hello</li>
+            <li>hii</li>
+         </ul>
+        <!-- ::selection Pseudo-element  -->
+         <p class="six">::selection Pseudo-element</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        area{
+            border: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iframe Example</h1>
+    <iframe src="lec1.html" frameborder="1" width="500px" height="500px" align="center"></iframe>
+    <h2>google map Example</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07673379907!2d-74.30915430916099!3d40.69667268264224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1745301127580!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr>
+    <h1>map example</h1>
+    <img src="https://ts1.mm.bing.net/th?id=OIP.TpY0mvrFA-Fy4Z11Q0IwzAHaE8&pid=15.1" alt="" usemap="#computermap" height="500px" width="500px">
+    <map name="computermap">
+        <area shape="rect" coords="34 44 350 389" href="lec1.html" alt="computer">
+        <area shape="circle" coords="390 400 50" href="lec2.html" alt="phone">
+
+    </map>
+    <hr>
+    <h1>Picture Example</h1>
+    <picture>
+        <source media="(min-width:650px)" srcset="https://thumbs.dreamstime.com/b/open-laptop-phone-cup-coffee-office-workplace-wooden-desk-51867599.jpg">
+        <source media="(min-width:450px)" srcset="https://img.freepik.com/premium-photo/office-table-top-view-with-laptop-coffee-smart-phone_763111-15858.jpg">
+        <img src="https://img.freepik.com/premium-photo/laptop-cup-coffee-table_154739-906.jpg" alt="">
+    </picture>
+    <hr>
+    <h1>Audio & Video Example</h1>
+    <h2>audio</h2>
+    <audio controls>
+        <source src="assets/audio/sample-9s.mp3" type="audio/mpeg">
+    </audio>
+    <h2>video</h2>
+    <video controls>
+        <source src="assets/video/SampleVideo_1280x720_30mb.mp4" type="video/mp4">
+    </video>
+    <h2>youtube video</h2>
+        <video controls height="300px" width="300px" autoplay>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        </video>
+    <h1>embedeed</h1>
+    <h2>Embedded image:</h2>
+        <embed src="assets/image/web.jpeg" type="image/jpeg">
+    <h2>Embedded iframe:</h2>  
+        <embed src="lec1.html" type="text/html">
+    <h2>Embedded Audio:</h2>
+        <embed src="assets/audio/sample-9s.mp3" type="audio/mp3">
+    <h2>Embedded Video:</h2>
+        <embed src="assets/video/SampleVideo_1280x720_30mb.mp4" type="video/mp4">
+</body>
+</html>

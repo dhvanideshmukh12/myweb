@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        /* Descendant combinator (space) */
+        .descendent p{
+            background-color: aqua;
+        }
+        /* Child combinator (>) */
+        .child ul > li{
+            background-color: aquamarine;
+        }
+        /* Next sibling combinator (+) */
+        .next-siblig div + p{
+            background-color: black;
+            color:white;
+        }
+        /* Subsequent-sibling combinator (~) */
+        .subsequent div ~ p{ 
+            background-color: aqua;
+            color: rgb(8, 8, 79);
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant combinator (space)</h1>
+    <div class="descendent">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <hr>
+    <h1>Child combinator (>)</h1>
+    <div class="child">
+        <ul>
+            <li>apple</li>
+            <li>mengo</li>
+            <li>graps</li>
+            <ol>
+                <li>fruits</li>
+                <li>veggies</li>
+            </ol>
+        </ul>
+    </div>
+    <h1>Next sibling combinator (+)- Adjecent combinator</h1>
+    <div class="next-siblig">
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+        <div>
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+          </div>
+          
+          <p>Paragraph 7. After a div.</p>
+    </div>
+    <h1>Subsequent-sibling combinator (~)</h1>
+    <div class="subsequent">
+        <p>Paragraph 1.</p>
+        <div>
+        <p>Paragraph 2.</p>
+        </div>
+        <p>Paragraph 3.</p>
+        <code>Some code.</code>
+        <p>Paragraph 4.</p>
+    </div>
+</body>
+</html>

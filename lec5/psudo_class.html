@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo</title>
+    <style>
+        /* unvisited link */
+
+        ul li{
+            color: black;
+            background-color: white;
+        }
+        ul li a{
+            color:black;
+        }
+    /* Anchor Pseudo-classes */
+        /* visited link */
+        ul li a:visited{
+            color:red;
+        }
+
+        /* mouse over link */
+        ul li a:hover{
+            color:rgb(11, 31, 100);
+        }
+        /* selected link */
+        ul li a:active{
+            color:rgb(200, 200, 91);
+        }
+        /* :first-child Pseudo-class */
+        p:first-child {
+        color: blue;
+        } 
+       /* : nth-child */
+        /* :lang Pseudo-class */
+        q:lang(no) {
+        quotes: "~" "~";
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>My Website</h1>
+    <ul>
+        <li><a href="inline.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <div>
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+
+            <div>
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+            </div>
+    </div>
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+</body>
+</html>

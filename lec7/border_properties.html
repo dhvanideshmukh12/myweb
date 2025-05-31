@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-properties</title>
+    <style>
+        .width{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+        }
+        .style{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: double;
+            border-color: rgb(0, 0, 0);
+
+        }
+        .radius{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-radius: 50%;
+        }
+        .radius1{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-top-right-radius: 20%;  
+        }
+        .radius2{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-bottom-left-radius: 20%;  
+        }
+        .radius3{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-top-right-radius: 20%;
+            border-top-left-radius: 20%;
+        }
+        .radius4{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-bottom-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+        }
+        .radius5{
+            height: 200px;
+            width: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+        .image{
+            height: 200px;
+            width: 200px;
+            border: 10px solid transparent;
+            border-image: url("https://th.bing.com/th/id/OIP.Uc8mbFmygAvdTA_pT8fbnAHaKJ?w=208&h=285&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            border-image-width: 20px;
+            border-image-slice: 20;
+            border-image-repeat:round;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="width">border-width</div><br>
+    <div class="style">border-style</div><br>
+    <div class="radius">border-radius</div><br>
+    <div class="radius1">border-radius 1</div><br>
+    <div class="radius2">border-radius 2</div><br>
+    <div class="radius3">border-radius 3</div><br>
+    <div class="radius4">border-radius 4</div><br>
+    <div class="radius5">border-radius 5</div><br>
+    <div class="image">border-image</div>
+</body>
+</html>

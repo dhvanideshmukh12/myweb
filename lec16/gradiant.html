@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiant</title>
+    <style>
+        .main{
+            padding: 100px;
+           
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+        }
+        #box1{
+            background-image: linear-gradient(red,green, yellow);
+        }
+        #box2{
+            background-image: linear-gradient(to right, yellow, green);
+        }
+        #box3{
+            background-image: linear-gradient(to bottom, red, yellow);
+        }
+        #box4{
+            background-image: radial-gradient(red,yellow, green);
+        }
+        #box5{
+            background-image: conic-gradient(red, yellow,green);
+            
+        }
+        #box6{
+            background-image: repeating-linear-gradient(red, yellow 20%);
+        }
+        #box7{
+            background-image: repeating-radial-gradient(red, yellow, green 20%);
+        }
+        #box8{
+            background-image: repeating-conic-gradient(red, yellow, green 20%);
+        }
+        #box9{
+            background: linear-gradient(red,green, yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+        <div class="box" id="box9"></div>
+    </div>
+</body>
+</html>

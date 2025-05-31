@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+            color: black;
+            padding: 30px;
+
+        }
+        .mega-menu{
+            display: flex;
+            gap: 20px;
+        }
+        .team1{
+            position: relative;
+            display: block;
+            padding: 20px;
+        }
+        .drop-down{
+            position: absolute;
+            display: none;
+            padding: 20px;
+
+        }
+        .team:hover .drop-down{
+            display: block;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="mega-menu">
+            <div class="mega1"><a href="">Home</a></div>
+            <div class="mega1"><a href="">About</a></div>
+            <div class="mega1 team"><a href="">Team</a>
+                <div class="drop-down">
+                    <div class="team1"><a href="">Team 1</a></div>
+                    <div class="team1"><a href="">Team 2</a></div>
+
+                </div>
+            </div>
+            <div class="mega1"><a href="">Contact</a></div>
+        </div>
+    </header>
+</body>
+</html>
