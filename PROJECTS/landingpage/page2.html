@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hero</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+          overflow-y: hidden;
+          overflow-x: hidden;
+        }
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  /* background-color: #f4f4f4; Optional background */
+  font-family: sans-serif;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 5px;
+}
+
+.logo .txt1 {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 18px;
+}
+/* tops@1234d */
+
+.dot-home {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dot-home .dot {
+  color: #4caf50;
+  font-size: 12px;
+}
+
+/* Nav links on right */
+.nav-links {
+  display: flex;
+  gap: 60px;
+  padding-right: 100px;
+  z-index: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: lightgray;
+}
+
+.main{
+  position: relative;
+
+}
+.main-plant{
+  position:absolute;
+  top:150px;
+  right: 100px;
+    z-index: 1;
+
+}
+img{
+    height: 418px;
+  width: 420px;
+
+}
+.rectangle {
+  position: absolute;
+  height: 600px;
+  width: 360px;
+  background-color: #C0F5D8;
+  top: -28px;
+  right: 100px;
+  z-index: 0;
+  border-radius: 0 0 180px 180px; 
+}
+.shape{
+  height: 380px;
+  width: 620px;
+  border: 3px solid #B3E7CA;
+  border-radius:190px 0 0 190px; 
+  position: absolute;
+  top: 450px;
+  right: -30px;
+  z-index: -1;
+}
+
+.vector{
+  position: absolute;
+  right: 0px;
+  top: 500px;
+}
+.icon{
+  position: absolute;
+    right: 40px;
+  top: 650px;
+}
+.icon-box{
+  position: relative;
+
+}
+.i-1{
+  font-size:30px;
+  position: absolute;
+  top:-10px;
+  right:10px
+  
+}
+.i-2{
+  font-size:20px;
+  transform: rotate(180deg);
+  position: absolute;
+  top:30px;
+  right: 15px;
+  
+}
+.i-3{
+  font-size: 30px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+.content-1 {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+  width: 550px;
+  font-size: 80px;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 2px; /* Adjust letter spacing */
+  line-height: 1.2; /* Better readability */
+  color: #1f1e1e;
+  text-align: center;
+}
+.content-2{
+  font-size: 18px;
+  position: absolute;
+  height: 120px;
+  width: 280px;
+  /* border: 1px solid black; */
+  top:370px;
+  left: 290px;
+}
+.button{
+  padding: 3px 5px;
+  font-size: 16px;
+  padding-right: 20px;
+  background-color: #10C800;
+  color: white;
+  box-shadow: 0px 0px 2px 2px lightgray;
+  border: none;
+  position: absolute;
+  top: 550px;
+  left: 500px;
+}
+.yellow-shape{
+  height: 600px;
+  width: 600px;
+  background-color: #FFF3C9;
+  border-radius: 50%;
+  position: absolute;
+  top:410px;
+  left: -300px;
+  z-index: 0;
+}
+.plant-2{
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+  top:420px;
+  left: 0;
+}
+    </style>
+</head>
+<body>
+   <div class="main">
+        <header>
+            <div class="logo">
+                <span class="txt1">⚘</span>
+                <span class="brand-name">plant</span>
+                <span class="dot-home"><span class="dot">●</span>home</span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+            </nav>
+        </header>
+        <div class="main-plant">
+          <img src="image.png" alt="">
+        </div>
+        <div class="rectangle"></div>
+        <div class="shape"></div>
+
+        <svg class="vector" width="443" height="221" viewBox="0 0 443 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M391.726 573.894C353.778 565.441 316.887 546.72 291.124 517.135C267.027 489.449 267.937 453.546 248.105 424.241C226.844 392.846 184.603 400.605 152.611 404.905C112.932 410.252 71.6375 406.13 38.7474 380.79C-25.4055 331.343 -1.48976 241.287 54.8368 203.172C89.8339 179.508 143.687 178.257 184.384 170.384C243.235 159.015 284.149 127.499 320.15 81.5064C345.187 49.5207 370.926 15.9761 411.825 4.983C467.874 -10.0809 527.102 14.2178 564.333 57.0083C599.856 97.8653 616.898 151.699 625.62 205.127C634.786 261.359 635.736 318.622 628.438 375.125C622.498 421.004 610.732 467.076 585.667 505.972C566.964 534.97 539.471 562.881 506.603 575.143C490.257 581.244 470.248 579.635 452.867 579.993C432.316 580.413 411.789 578.366 391.726 573.894Z" fill="#F1F1F1"/>
+        </svg>
+
+        <div class="icon">
+          <div class="icon-box">
+            <div class="i-1">🍃</div>
+            <div class="i-2">🍃</div>
+            <div class="i-3">༄</div>
+          </div>
+        </div>
+        <div class="content-1">Take care of your plants.</div>
+        <p class="content-2">
+          Discover the best tips for caring for your indoor plants.<br>
+          Moisture, light, temperature...<br>
+          Choose the plant that best suits your home.
+        </p>
+        <button class="button">Free Trial</button>
+
+        <div class="yellow-shape"></div>
+        <img class="plant-2" src="image3.png" alt="">
+   </div>
+</body>
+</html>

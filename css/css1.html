@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      counter-reset: section;
+    }
+
+    /* Layer stacking using z-index */
+    .layer {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+      z-index: 1;
+    }
+
+    .layer.top {
+      background: coral;
+      top: -50px;
+      left: 30px;
+      z-index: 2;
+    }
+
+    /* Counter with counter-increment */
+    h2::before {
+      counter-increment: section;
+      content: "Section " counter(section) ": ";
+    }
+
+    /* Direction */
+    .rtl-text {
+      direction:rtl;
+      border: 1px solid gray;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Visibility */
+    .visibility-box {
+      visibility: hidden;
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    /* Clear */
+    .float-box {
+      float: left;
+      width: 150px;
+      height: 100px;
+      background: lightgreen;
+      margin-right: 10px;
+    }
+
+    .clear-box {
+      clear:both;
+      background: lightgray;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* Element size and box-sizing */
+    .sized-box {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 5px solid black;
+      box-sizing: border-box;
+      background: lightpink;
+    }
+
+    /* Table demo */
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-top: 20px;
+      empty-cells: hide;
+    }
+
+    td {
+      border: 1px solid black;
+      height: 40px;
+      text-align: center;
+    }
+
+    /* Page break (for print) */
+    .page-break {
+      page-break-before: always;
+    }
+
+    /* Quotes */
+    q {
+      quotes: "«" "»";
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Layering with z-index</h2>
+  <div class="layer">Bottom Layer</div>
+  <div class="layer top">Top Layer</div>
+
+  <h2>Float and Clear</h2>
+  <div class="float-box">Floating Box</div>
+  <div class="clear-box">This is below the float</div>
+
+  <h2>Box with Element Size</h2>
+  <div class="sized-box">Sized Box</div>
+
+  <h2>Direction: RTL</h2>
+  <div class="rtl-text">This is right-to-left text.</div>
+
+  <h2>Visibility</h2>
+  <div class="visibility-box">You can't see me!</div>
+
+  <h2>CSS Counter</h2>
+  <h2>Section Title</h2>
+  <h2>Another Section</h2>
+
+  <h2>Table with Empty Cells and Fixed Layout</h2>
+  <table>
+    <tr><td>1</td><td></td><td>3</td></tr>
+    <tr><td>4</td><td>5</td><td></td></tr>
+  </table>
+
+  <div class="page-break"></div>
+  <h2>Quotes</h2>
+  <p><q>CSS is powerful.</q></p>
+
+</body>
+</html>

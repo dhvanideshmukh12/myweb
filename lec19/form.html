@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 700px;
+            width: 800px;
+            border: 1px solid black;
+            display: flex;
+            overflow: hidden;
+        }
+        .first{
+            height: 100%;
+            width: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 10px white;
+            z-index: 1;
+        }
+        form{
+            /* border: 1px solid white; */
+            padding: 20px;
+            width: 100%;
+        }
+        form h1{
+            text-align: center;
+        }
+        .input-div{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        .input-div label{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .input-div input{
+            height: 40px;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .button-div{
+            padding: 20px;
+            
+        }
+        .button-div button{
+            background-color: rgb(9, 9, 28);
+            color: white;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            width: 100%;
+            font-size: 20px;
+
+        }
+        .info{
+            display: flex;
+
+        }
+        .text{
+            text-align: center;
+            width: 100%;
+        }
+        .sec{
+            height: 100%;
+            width: 50%;
+            background-color: black;
+            position: relative;
+            border: 1px solid black;
+            
+
+        }
+        .circle{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            right: 0;
+            translate: 100px -100px;
+            border-radius: 50%;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .text-div{
+            color: white;
+            padding: 20px;
+        }
+        .text-div h1{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .text-div p{
+            font-size: 18px;
+            word-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <form>
+                <h1>Login Form</h1>
+
+                <div class="form-content">
+
+                    <div class="input-div">
+                        <label for="name">User Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-div">
+                        <label for="name">Password</label>
+                        <input type="text">
+                    </div>
+                    <div class="button-div">
+                        <button>Login</button>
+                    </div>
+                    <div class="info">
+                        <p class="text"><span>First time</span><a href="">sign in</a></p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="sec">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="text-div">
+                    <h1>Login Form</h1>
+                <p>This login form design is considered one of the best, as it provides the convenience of Facebook and Twitter login options for users.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- https://bootstrapbrain.com/component/bootstrap-signup-form-snippet/#code -->

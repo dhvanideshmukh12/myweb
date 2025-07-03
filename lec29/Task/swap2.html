@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap Without Third Variable</title>
+  <script>
+    function swapWithoutTemp() {
+      let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+
+      // Swapping without a third variable
+      a = a + b;
+      b = a - b;
+      a = a - b;
+
+      alert("After Swapping:\nA = " + a + "\nB = " + b);
+    }
+  </script>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Swap Two Variables (Without 3rd Variable)</legend>
+
+    <label for="num1">Enter A: </label>
+    <input type="text" id="num1"><br><br>
+
+    <label for="num2">Enter B: </label>
+    <input type="text" id="num2"><br><br>
+
+    <input type="button" value="Swap" onclick="swapWithoutTemp()">
+
+  </fieldset>
+
+</body>
+</html>

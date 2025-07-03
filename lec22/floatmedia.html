@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            height: 400px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .main-content {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            background-color: white;
+            height: 400px;
+        }
+        
+        aside {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            background-color: #ddd;
+            height: 400px;
+        }
+        
+        footer {
+            clear: both; 
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .box {
+            float: left;
+            width: 30%;
+            margin: 1.66%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media (max-width: 768px) {
+            nav, .main-content, aside, .box {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Float Layout Example</h1>
+        <p>This page demonstrates CSS float property</p>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="main-content">
+            <h2>Main Content Area</h2>
+            <p>This is the main content section of the page. It's floated left along with the navigation and sidebar.</p>
+            <p>The float property is used here to create a traditional three-column layout.</p>
+        </div>
+        
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is the sidebar content. It's also floated left to create the column layout.</p>
+        </aside>
+    </div>
+    
+    <div class="container clearfix">
+        <div class="box">
+            <h3>Box 1</h3>
+            <p>Floated content box with equal width.</p>
+        </div>
+        
+        <div class="box">
+            <h3>Box 2</h3>
+            <p>Another floated content box.</p>
+        </div>
+        
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Third floated content box in this row.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Float Layout Example. All rights reserved.</p>
+    </footer>
+</body>
+</html>

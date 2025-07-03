@@ -1,0 +1,27 @@
+<!-- Interaction (alert, confirmation, prompt) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alertExample(){
+            alert("Hello World");
+        }
+        function confirmation(){
+            let flag = confirm("are you want to confirm ");
+            alert(flag);
+        }
+        function prompteg(){
+            let name = prompt("enter your name");
+            alert(name);
+        }
+    </script>
+ </head>
+ <body>
+    <button onclick="alertExample()">Alert example</button>
+    <button onclick="confirmation()">confirm example</button>
+    <button onclick="prompteg()">prompt example</button>
+ </body>
+ </html> 

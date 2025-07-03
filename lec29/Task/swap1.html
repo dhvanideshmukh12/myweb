@@ -1,0 +1,38 @@
+<!-- Swap two variables with third variable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap Two Variables</title>
+  <script>
+    function swapWithTemp() {
+      let a = document.getElementById("num1").value;
+      let b = document.getElementById("num2").value;
+
+      // Swapping with third variable
+      let temp = a; 
+      a = b; 
+      b = temp;
+
+      alert("After Swapping:\nA = " + a + "\nB = " + b);
+    }
+  </script>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Swap Two Variables (Using 3rd Variable)</legend>
+
+    <label for="num1">Enter A: </label>
+    <input type="text" id="num1"><br><br>
+
+    <label for="num2">Enter B: </label>
+    <input type="text" id="num2"><br><br>
+
+    <input type="button" value="Swap" onclick="swapWithTemp()">
+
+  </fieldset>
+
+</body>
+</html>

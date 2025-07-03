@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rectangle Area</title>
+  <script>
+    function calculateRectangleArea() {
+      let length = document.getElementById("length").value;
+      let width = document.getElementById("width").value;
+
+      // Convert input values to numbers
+      length = Number(length);
+      width = Number(width);
+
+      // Calculate area
+
+      //Area=length×width
+
+      let area = length * width;
+
+      // Show result in alert
+      alert("Area of Rectangle: " + area.toFixed(2));
+    }
+  </script>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Area of Rectangle</legend>
+
+    <label for="length">Enter Length: </label>
+    <input type="text" id="length"><br><br>
+
+    <label for="width">Enter Width: </label>
+    <input type="text" id="width"><br><br>
+
+    <input type="button" value="Calculate Area" onclick="calculateRectangleArea()">
+  </fieldset>
+
+</body>
+</html>

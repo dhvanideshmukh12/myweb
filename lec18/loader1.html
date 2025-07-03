@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Enhanced Header */
+        header{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* New vibrant gradient */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            transform: rotate(-2deg);
+            top: -10px;
+            left: -25%;
+        }
+
+        header h1 {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-size: 2.2rem;
+            z-index: 1;
+        }
+
+        .hero{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .hero::before{
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -40px;
+            left: -40px;
+            animation-name: circle;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .hero::after{
+            content: "";
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            bottom: -30px;
+            right: -20px;
+            animation-name: circle;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes circle  {
+            0%, 100%{
+                transform: translateY(0);
+            }           
+            50%{
+                transform: translateY(-20px);
+            }
+        }
+
+        .hero-content{
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-content h1{
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .hero-content p{
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .hero-content a{
+            display: inline-block;
+            background: white;
+            color: #2575fc;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hero-content a:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            color: #6a11cb;
+        }
+
+        
+
+        footer{
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Webpage</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Creative Space</h1>
+                <p>Discover amazing projects, creative ideas, and innovative solutions that inspire and transform.</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>

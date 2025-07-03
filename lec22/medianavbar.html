@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            padding: 20px;
+            background-color: black;
+            color: white;
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        @media screen and (max-width:600px) {
+            .navbar{
+                display: block;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                
+            }
+            .navbar li{
+                margin-bottom: 30px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>

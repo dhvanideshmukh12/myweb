@@ -1,0 +1,51 @@
+<!-- P = 1000
+
+R = 5
+
+T = 2
+
+SI = (1000 × 5 × 2) / 100 = 100 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Interest</title>
+  <script>
+    function calculateSI() {
+      let principal = document.getElementById("principal").value;
+      let rate = document.getElementById("rate").value;
+      let time = document.getElementById("time").value;
+
+      // Convert inputs to numbers
+      principal = Number(principal);
+      rate = Number(rate);
+      time = Number(time);
+
+      // Calculate Simple Interest
+      let interest = (principal * rate * time) / 100;
+
+      // Show result in alert
+      alert("Simple Interest: " + interest.toFixed(2));
+    }
+  </script>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Simple Interest Calculator</legend>
+
+    <label for="principal">Enter Principal (P): </label>
+    <input type="text" id="principal"><br><br>
+
+    <label for="rate">Enter Rate (%) (R): </label>
+    <input type="text" id="rate"><br><br>
+
+    <label for="time">Enter Time (Years) (T): </label>
+    <input type="text" id="time"><br><br>
+
+    <input type="button" value="Calculate SI" onclick="calculateSI()">
+  </fieldset>
+
+</body>
+</html>

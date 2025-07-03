@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Area of Square</title>
+    <script>
+        function calculateSquareArea() {
+            let side = document.getElementById("side").value;
+            side = parseFloat(side); 
+            // Area=side×side
+            let area = side * side;
+
+            alert("Area of Square: " + area.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Area of Square</legend>
+
+        <label for="side">Enter Side Length: </label>
+        <input type="text" id="side">
+
+        <input type="button" value="Click" onclick="calculateSquareArea()">        
+    </fieldset>
+
+</body>
+</html>
